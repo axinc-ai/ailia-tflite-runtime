@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['ailia_20tflite_20runtime_20sdk_20document_0',['ailia TFLite Runtime SDK Document',['../index.html',1,'']]],
-  ['ailia_5ftflite_2eh_1',['ailia_tflite.h',['../ailia__tflite_8h.html',1,'']]],
-  ['ailia_5ftflite_5fcpu_5ffeatures_5favx_2',['AILIA_TFLITE_CPU_FEATURES_AVX',['../ailia__tflite_8h.html#ac6b46690cebd7ae7bbeceb838e39cef7',1,'ailia_tflite.h']]],
-  ['ailia_5ftflite_5fcpu_5ffeatures_5favx2_3',['AILIA_TFLITE_CPU_FEATURES_AVX2',['../ailia__tflite_8h.html#a7c18888533e1caf20bc4932c8ab43d87',1,'ailia_tflite.h']]],
+  ['ailia_5ftflite_2eh_0',['ailia_tflite.h',['../ailia__tflite_8h.html',1,'']]],
+  ['ailia_5ftflite_5fcpu_5ffeatures_5favx_1',['AILIA_TFLITE_CPU_FEATURES_AVX',['../ailia__tflite_8h.html#ac6b46690cebd7ae7bbeceb838e39cef7',1,'ailia_tflite.h']]],
+  ['ailia_5ftflite_5fcpu_5ffeatures_5favx2_2',['AILIA_TFLITE_CPU_FEATURES_AVX2',['../ailia__tflite_8h.html#a7c18888533e1caf20bc4932c8ab43d87',1,'ailia_tflite.h']]],
+  ['ailia_5ftflite_5fcpu_5ffeatures_5favx512_3',['AILIA_TFLITE_CPU_FEATURES_AVX512',['../ailia__tflite_8h.html#ad0302dce720e9465f53aeb1b798b9b4b',1,'ailia_tflite.h']]],
   ['ailia_5ftflite_5fcpu_5ffeatures_5fneon_4',['AILIA_TFLITE_CPU_FEATURES_NEON',['../ailia__tflite_8h.html#ac6bd275d117bc876ec294fe8df2313e9',1,'ailia_tflite.h']]],
   ['ailia_5ftflite_5fcpu_5ffeatures_5fnone_5',['AILIA_TFLITE_CPU_FEATURES_NONE',['../ailia__tflite_8h.html#a482796582d6a181a8c85404cee86aa91',1,'ailia_tflite.h']]],
   ['ailia_5ftflite_5fcpu_5ffeatures_5fsse2_6',['AILIA_TFLITE_CPU_FEATURES_SSE2',['../ailia__tflite_8h.html#a61acafd3093b58fc20a12dfe14c52c12',1,'ailia_tflite.h']]],
@@ -86,5 +86,6 @@ var searchData=
   ['ailiatflitesetprofilemode_83',['ailiaTFLiteSetProfileMode',['../ailia__tflite_8h.html#ae6644208466e6ff60465b50554b88318',1,'ailia_tflite.h']]],
   ['ailiatflitesetscratchbuffer_84',['ailiaTFLiteSetScratchBuffer',['../ailia__tflite_8h.html#af14ef38d13485d1c6dcd6046c54d880e',1,'ailia_tflite.h']]],
   ['ailiatflitestatus_85',['AILIATFLiteStatus',['../ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2',1,'ailia_tflite.h']]],
-  ['ailiatflitetensortype_86',['AILIATFLiteTensorType',['../ailia__tflite_8h.html#ad484d38dd88bf46de076f88cc2bff74c',1,'ailia_tflite.h']]]
+  ['ailiatflitetensortype_86',['AILIATFLiteTensorType',['../ailia__tflite_8h.html#ad484d38dd88bf46de076f88cc2bff74c',1,'ailia_tflite.h']]],
+  ['ailia_20tflite_20runtime_20sdk_20document_87',['ailia TFLite Runtime SDK Document',['../index.html',1,'']]]
 ];
