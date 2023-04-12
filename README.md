@@ -16,7 +16,7 @@ This api document is in beta. We plan to change the URL of the document in the f
 
 ### Python
 
-- [API (EN & JP)](https://axinc-ai.github.io/ailia-tflite-runtime/api/python/)
+- [API (EN & JP)](https://axinc-ai.github.io/ailia-tflite-runtime/api/python/en/)
 - [Models](https://github.com/axinc-ai/ailia-models-tflite)
 
 ### C99
