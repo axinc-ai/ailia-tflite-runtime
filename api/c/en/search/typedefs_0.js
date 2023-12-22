@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['ailiatflitecpufeatures_131',['AILIATFLiteCpuFeatures',['../ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561',1,'ailia_tflite.h']]],
-  ['ailiatfliteenvironment_132',['AILIATFLiteEnvironment',['../ailia__tflite_8h.html#ad3efb8abac41021597407f121eed535d',1,'ailia_tflite.h']]],
-  ['ailiatfliteflags_133',['AILIATFLiteFlags',['../ailia__tflite_8h.html#a102124bd44711479870d1515284d1a19',1,'ailia_tflite.h']]],
-  ['ailiatflitememorymode_134',['AILIATFLiteMemoryMode',['../ailia__tflite_8h.html#a9c44ccf3ba49f821be2629bd3dcde53c',1,'ailia_tflite.h']]],
-  ['ailiatflitestatus_135',['AILIATFLiteStatus',['../ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2',1,'ailia_tflite.h']]],
-  ['ailiatflitetensortype_136',['AILIATFLiteTensorType',['../ailia__tflite_8h.html#ad484d38dd88bf46de076f88cc2bff74c',1,'ailia_tflite.h']]]
+  ['ailiatflitecpufeatures_132',['AILIATFLiteCpuFeatures',['../ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561',1,'ailia_tflite.h']]],
+  ['ailiatfliteenvironment_133',['AILIATFLiteEnvironment',['../ailia__tflite_8h.html#ad3efb8abac41021597407f121eed535d',1,'ailia_tflite.h']]],
+  ['ailiatfliteflags_134',['AILIATFLiteFlags',['../ailia__tflite_8h.html#a102124bd44711479870d1515284d1a19',1,'ailia_tflite.h']]],
+  ['ailiatflitememorymode_135',['AILIATFLiteMemoryMode',['../ailia__tflite_8h.html#a9c44ccf3ba49f821be2629bd3dcde53c',1,'ailia_tflite.h']]],
+  ['ailiatflitestatus_136',['AILIATFLiteStatus',['../ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2',1,'ailia_tflite.h']]],
+  ['ailiatflitetensortype_137',['AILIATFLiteTensorType',['../ailia__tflite_8h.html#ad484d38dd88bf46de076f88cc2bff74c',1,'ailia_tflite.h']]]
 ];

@@ -66,7 +66,7 @@ var searchData=
   ['ailiatflitegetoutputtensorindex_63',['ailiaTFLiteGetOutputTensorIndex',['../classAiliaTFLite.html#ad65f19606d02cc5cf086d142e0fcac5b',1,'AiliaTFLite']]],
   ['ailiatflitegetscratchbufferusage_64',['ailiaTFLiteGetScratchBufferUsage',['../classAiliaTFLite.html#a0d2e1c64ca666e8d6a4499a471fb4c61',1,'AiliaTFLite']]],
   ['ailiatflitegetselecteddeviceindexes_65',['ailiaTFLiteGetSelectedDeviceIndexes',['../classAiliaTFLite.html#ac9b8906794983f7e9984787f1c5abb7a',1,'AiliaTFLite']]],
-  ['ailiatflitegetsummary_66',['ailiaTFLiteGetSummary',['../classAiliaTFLite.html#a7014603b3f8fbb05da77f628baf7c8af',1,'AiliaTFLite']]],
+  ['ailiatflitegetsummary_66',['ailiaTFLiteGetSummary',['../classAiliaTFLite.html#a34610cb0c9af71e5b02b7023998a8458',1,'AiliaTFLite']]],
   ['ailiatflitegetsummarylength_67',['ailiaTFLiteGetSummaryLength',['../classAiliaTFLite.html#a03af4146018d8373ea81aedba625e817',1,'AiliaTFLite']]],
   ['ailiatflitegettensorbuffer_68',['ailiaTFLiteGetTensorBuffer',['../classAiliaTFLite.html#a5fe52b148e04a2a4838b83beb93e25a4',1,'AiliaTFLite']]],
   ['ailiatflitegettensordimension_69',['ailiaTFLiteGetTensorDimension',['../classAiliaTFLite.html#a7c318dd9f681ba80793fc048699a645c',1,'AiliaTFLite']]],

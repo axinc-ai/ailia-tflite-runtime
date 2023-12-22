@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ailia_tflite
-   &#160;<span id="projectnumber">1.1.10.0</span>
+   &#160;<span id="projectnumber">1.1.11.0</span>
    </div>
   </td>
  </tr>
@@ -203,177 +203,179 @@ $(function() {
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160; </div>
 <div class="line"><a name="l00490"></a><span class="lineno"><a class="line" href="ailia__tflite_8h.html#ad0302dce720e9465f53aeb1b798b9b4b">  490</a></span>&#160;<span class="preprocessor">    #define AILIA_TFLITE_CPU_FEATURES_AVX512 (0x00000040)</span></div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
-<div class="line"><a name="l00492"></a><span class="lineno"><a class="line" href="ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561">  492</a></span>&#160;    <span class="keyword">typedef</span> int32_t <a class="code" href="ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561">AILIATFLiteCpuFeatures</a>;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160; </div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="comment">    * 推論環境列挙API</span></div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a11a709b1eb82ab242422fabdfc6bd73a">ailiaTFLiteGetEnvironmentCount</a>(<span class="keywordtype">size_t</span> *env_count);</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ab507f9923493726ba96534d5419a1839">ailiaTFLiteGetEnvironment</a>(<a class="code" href="ailia__tflite_8h.html#ad3efb8abac41021597407f121eed535d">AILIATFLiteEnvironment</a> *env);</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160; </div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="comment">    * インスタンス生成・破棄API</span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160; </div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a033451378fff5cbd772c56df5325f382">ailiaTFLiteCreate</a>(<span class="keyword">struct</span> AILIATFLiteInstance **instance, <span class="keyword">const</span> <span class="keywordtype">void</span> * tflite, <span class="keyword">const</span> <span class="keywordtype">size_t</span> tflite_length, <span class="keywordtype">void</span> *(*pmalloc)(<span class="keywordtype">size_t</span>, <span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *(*pmemcpy)(<span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keywordtype">size_t</span>, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> (*pfree)(<span class="keywordtype">void</span> *, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *phandle, <a class="code" href="ailia__tflite_8h.html#ad3efb8abac41021597407f121eed535d">AILIATFLiteEnvironment</a> env_id, <a class="code" href="ailia__tflite_8h.html#a9c44ccf3ba49f821be2629bd3dcde53c">AILIATFLiteMemoryMode</a> memory_mode, <a class="code" href="ailia__tflite_8h.html#a102124bd44711479870d1515284d1a19">AILIATFLiteFlags</a> flags);</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a2762d4eab88139b057795b65afa3410f">ailiaTFLiteDestroy</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance);</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160; </div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="comment">    * CPU命令設定系API</span></div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aac89825fde2cae2116e18d2b057b7e7f">ailiaTFLiteGetCpuFeatures</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance, int32_t *cpu_features);</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abf01e8e9893a604cabfd70c8df873d54">ailiaTFLiteSetCpuFeatures</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance, int32_t cpu_features);</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160; </div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment">    * 確保系API</span></div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <a class="code" href="ailia__tflite_8h.html#acc1f845d870f1bbd223d8e58fe31819c">ailiaTFLiteAllocateTensors</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance);</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160; </div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="comment">    * Tensor設定系API</span></div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a2ea3823474e53affb293bf6f27f0d917">ailiaTFLiteResizeInputTensor</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance, <span class="keyword">const</span> int32_t input_index, <span class="keyword">const</span> int32_t* shape, <span class="keyword">const</span> int32_t dim);</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160; </div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="comment">    * Tensor取得系API</span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160; </div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a99e53b6ce5e7b4aeb02796307379d618">ailiaTFLiteGetNumberOfInputs</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* num_of_input_tensor);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160; </div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a5b762bb33f7ce1cd61d321e76ccbbe7f">ailiaTFLiteGetInputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* tensor_index, <span class="keyword">const</span> int32_t input_index);</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160; </div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abb5deecc950bcff5fd4eef168e3d801a">ailiaTFLiteGetNumberOfOutputs</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* num_of_output_tensor);</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160; </div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a848dde61a3b163b4b71381c310439745">ailiaTFLiteGetOutputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* tensor_index, <span class="keyword">const</span> int32_t output_index);</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160; </div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a8a75abd68011db5b3878ecf214a039d2">ailiaTFLiteGetTensorDimension</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* tensor_dim, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160; </div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    <a class="code" href="ailia__tflite_8h.html#af662ecba3fc6103a517ecfe8c7605c7f">ailiaTFLiteGetTensorShape</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *shape, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160; </div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a8f8405be45e8ff4be81f3917be287314">ailiaTFLiteGetTensorShapeSignature</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *shape, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160; </div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aad4d42e3f4862e4c43ed149394dc0654">ailiaTFLiteGetTensorType</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <a class="code" href="ailia__tflite_8h.html#ad484d38dd88bf46de076f88cc2bff74c">AILIATFLiteTensorType</a>* tensor_type, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160; </div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ae3d4e8d61f104aba9fddc94a5d3ffeeb">ailiaTFLiteGetTensorBuffer</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">void</span>** buffer, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160; </div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a777423cf731269609aef6fe4c620b542">ailiaTFLiteGetTensorName</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keyword">const</span> <span class="keywordtype">char</span>** name, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160; </div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abb222b42c49b9ed81eaab69638c5dda3">ailiaTFLiteGetTensorQuantizationCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* count, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160; </div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a99de26ece390ea5d144bd5acea07fc11">ailiaTFLiteGetTensorQuantizationScale</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">float</span> *scale, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160; </div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a63009ac208c3d191b530e0f01258c851">ailiaTFLiteGetTensorQuantizationZeroPoint</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int64_t *zero_point, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160; </div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a7e21d85de94ef9221f7d082c7a618ef3">ailiaTFLiteGetTensorQuantizationQuantizedDimension</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* axis, <span class="keyword">const</span> int32_t tensor_index);</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160; </div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;<span class="comment">    * Tensor推論系API</span></div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160; </div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ab1820b1dc49127cc614ad509e72e472d">ailiaTFLitePredict</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance);</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160; </div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;<span class="comment">    * ノード情報取得API</span></div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160; </div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a4a0c3a183c8ed7e94d98f314757a5126">ailiaTFLiteGetNodeCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *count);</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160; </div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a100750ed83c009c4e2a798075ebe3d50">ailiaTFLiteGetNodeOperator</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *op, <span class="keyword">const</span> int32_t node_index);</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160; </div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a36d8b6ee7b318331bd657d476e89d9b1">ailiaTFLiteGetNodeInputCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *count, <span class="keyword">const</span> int32_t node_index);</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160; </div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ad5c33354afdac626be013d76bd638c82">ailiaTFLiteGetNodeInputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *tensor_index, <span class="keyword">const</span> int32_t node_index, <span class="keyword">const</span> int32_t input_index);</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160; </div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aaa57848491dd1ad11b549c981902d981">ailiaTFLiteGetNodeOutputCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *count, <span class="keyword">const</span> int32_t node_index);</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160; </div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a540b22c72178236e44e360fa723cb11a">ailiaTFLiteGetNodeOutputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *tensor_index, <span class="keyword">const</span> int32_t node_index, <span class="keyword">const</span> int32_t output_index);</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160; </div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a96ebebd2171386c11198ed01a6f35008">ailiaTFLiteGetNodeOption</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">void</span> *value, <span class="keyword">const</span> int32_t node_index, <span class="keyword">const</span> <span class="keywordtype">char</span> *key);</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160; </div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abe78851c83ea8b555bca91db03191c13">ailiaTFLiteGetOperatorName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> **name, <span class="keyword">const</span> int32_t op);</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160; </div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;<span class="comment">    * プロファイルAPI</span></div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160; </div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ae6644208466e6ff60465b50554b88318">ailiaTFLiteSetProfileMode</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">int</span> mode);</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160; </div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a31b6a4c7ab20bc6285d0f030c49a551f">ailiaTFLiteGetSummaryLength</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">size_t</span> *buffer_size);</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160; </div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aa06cfe7964f7e91fcac4dac14c6d5ede">ailiaTFLiteGetSummary</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> buffer_size);</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160; </div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;<span class="comment">    * エラー詳細取得API</span></div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160; </div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a618d3addc7d3b9c224757fe77b435343">ailiaTFLiteGetErrorDetail</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">char</span> **buffer);</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160; </div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;<span class="comment">    * スクラッチバッファ設定API</span></div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160; </div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;    <a class="code" href="ailia__tflite_8h.html#af14ef38d13485d1c6dcd6046c54d880e">ailiaTFLiteSetScratchBuffer</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">void</span> *int_buffer, <span class="keywordtype">size_t</span> int_buffer_size, <span class="keywordtype">void</span> *mid_buffer, <span class="keywordtype">size_t</span> mid_buffer_size, <span class="keywordtype">void</span> *ext_buffer, <span class="keywordtype">size_t</span> ext_buffer_size);</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160; </div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abbab042e7225cd6ae27510d2a701dc27">ailiaTFLiteGetScratchBufferUsage</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">size_t</span> *int_buffer_size, <span class="keywordtype">size_t</span> *mid_buffer_size, <span class="keywordtype">size_t</span> *ext_buffer_size);</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160; </div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;<span class="comment">    /****************************************************************</span></div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;<span class="comment">    * MKL設定API</span></div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;<span class="comment">    **/</span></div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160; </div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ad2ca4f49099ba34816b1e2c62b9dc62d">ailiaTFLiteMklSetNumThreads</a>(<span class="keyword">const</span> int32_t num_threads);</div>
-<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160; </div>
-<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
-<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aa4a72d893963d90eebc881868d519a56">ailiaTFLiteMklDisableFastMM</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160; </div>
-<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;}</div>
-<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !defined(INCLUDED_AILIA_TFLITE) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00500"></a><span class="lineno"><a class="line" href="ailia__tflite_8h.html#a03324653e33020846f5697fef8d52fcf">  500</a></span>&#160;<span class="preprocessor">    #define AILIA_TFLITE_CPU_FEATURES_I8MM   (0x00000080)</span></div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
+<div class="line"><a name="l00502"></a><span class="lineno"><a class="line" href="ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561">  502</a></span>&#160;    <span class="keyword">typedef</span> int32_t <a class="code" href="ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561">AILIATFLiteCpuFeatures</a>;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="comment">    * 推論環境列挙API</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160; </div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a11a709b1eb82ab242422fabdfc6bd73a">ailiaTFLiteGetEnvironmentCount</a>(<span class="keywordtype">size_t</span> *env_count);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ab507f9923493726ba96534d5419a1839">ailiaTFLiteGetEnvironment</a>(<a class="code" href="ailia__tflite_8h.html#ad3efb8abac41021597407f121eed535d">AILIATFLiteEnvironment</a> *env);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">    * インスタンス生成・破棄API</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a033451378fff5cbd772c56df5325f382">ailiaTFLiteCreate</a>(<span class="keyword">struct</span> AILIATFLiteInstance **instance, <span class="keyword">const</span> <span class="keywordtype">void</span> * tflite, <span class="keyword">const</span> <span class="keywordtype">size_t</span> tflite_length, <span class="keywordtype">void</span> *(*pmalloc)(<span class="keywordtype">size_t</span>, <span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *(*pmemcpy)(<span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keywordtype">size_t</span>, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> (*pfree)(<span class="keywordtype">void</span> *, <span class="keywordtype">void</span> *), <span class="keywordtype">void</span> *phandle, <a class="code" href="ailia__tflite_8h.html#ad3efb8abac41021597407f121eed535d">AILIATFLiteEnvironment</a> env_id, <a class="code" href="ailia__tflite_8h.html#a9c44ccf3ba49f821be2629bd3dcde53c">AILIATFLiteMemoryMode</a> memory_mode, <a class="code" href="ailia__tflite_8h.html#a102124bd44711479870d1515284d1a19">AILIATFLiteFlags</a> flags);</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a2762d4eab88139b057795b65afa3410f">ailiaTFLiteDestroy</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance);</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160; </div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="comment">    * CPU命令設定系API</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160; </div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aac89825fde2cae2116e18d2b057b7e7f">ailiaTFLiteGetCpuFeatures</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance, int32_t *cpu_features);</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160; </div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abf01e8e9893a604cabfd70c8df873d54">ailiaTFLiteSetCpuFeatures</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance, int32_t cpu_features);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160; </div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="comment">    * 確保系API</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160; </div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <a class="code" href="ailia__tflite_8h.html#acc1f845d870f1bbd223d8e58fe31819c">ailiaTFLiteAllocateTensors</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance);</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160; </div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="comment">    * Tensor設定系API</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160; </div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a2ea3823474e53affb293bf6f27f0d917">ailiaTFLiteResizeInputTensor</a>(<span class="keyword">struct</span> AILIATFLiteInstance * instance, <span class="keyword">const</span> int32_t input_index, <span class="keyword">const</span> int32_t* shape, <span class="keyword">const</span> int32_t dim);</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160; </div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="comment">    * Tensor取得系API</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a99e53b6ce5e7b4aeb02796307379d618">ailiaTFLiteGetNumberOfInputs</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* num_of_input_tensor);</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160; </div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a5b762bb33f7ce1cd61d321e76ccbbe7f">ailiaTFLiteGetInputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* tensor_index, <span class="keyword">const</span> int32_t input_index);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160; </div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abb5deecc950bcff5fd4eef168e3d801a">ailiaTFLiteGetNumberOfOutputs</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* num_of_output_tensor);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a848dde61a3b163b4b71381c310439745">ailiaTFLiteGetOutputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* tensor_index, <span class="keyword">const</span> int32_t output_index);</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160; </div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a8a75abd68011db5b3878ecf214a039d2">ailiaTFLiteGetTensorDimension</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* tensor_dim, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160; </div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <a class="code" href="ailia__tflite_8h.html#af662ecba3fc6103a517ecfe8c7605c7f">ailiaTFLiteGetTensorShape</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *shape, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160; </div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a8f8405be45e8ff4be81f3917be287314">ailiaTFLiteGetTensorShapeSignature</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *shape, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160; </div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aad4d42e3f4862e4c43ed149394dc0654">ailiaTFLiteGetTensorType</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <a class="code" href="ailia__tflite_8h.html#ad484d38dd88bf46de076f88cc2bff74c">AILIATFLiteTensorType</a>* tensor_type, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160; </div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ae3d4e8d61f104aba9fddc94a5d3ffeeb">ailiaTFLiteGetTensorBuffer</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">void</span>** buffer, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160; </div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a777423cf731269609aef6fe4c620b542">ailiaTFLiteGetTensorName</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keyword">const</span> <span class="keywordtype">char</span>** name, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160; </div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abb222b42c49b9ed81eaab69638c5dda3">ailiaTFLiteGetTensorQuantizationCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* count, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160; </div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a99de26ece390ea5d144bd5acea07fc11">ailiaTFLiteGetTensorQuantizationScale</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">float</span> *scale, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160; </div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a63009ac208c3d191b530e0f01258c851">ailiaTFLiteGetTensorQuantizationZeroPoint</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int64_t *zero_point, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160; </div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a7e21d85de94ef9221f7d082c7a618ef3">ailiaTFLiteGetTensorQuantizationQuantizedDimension</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t* axis, <span class="keyword">const</span> int32_t tensor_index);</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160; </div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;<span class="comment">    * Tensor推論系API</span></div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160; </div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ab1820b1dc49127cc614ad509e72e472d">ailiaTFLitePredict</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance);</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160; </div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;<span class="comment">    * ノード情報取得API</span></div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160; </div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a4a0c3a183c8ed7e94d98f314757a5126">ailiaTFLiteGetNodeCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *count);</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160; </div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a100750ed83c009c4e2a798075ebe3d50">ailiaTFLiteGetNodeOperator</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *op, <span class="keyword">const</span> int32_t node_index);</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160; </div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a36d8b6ee7b318331bd657d476e89d9b1">ailiaTFLiteGetNodeInputCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *count, <span class="keyword">const</span> int32_t node_index);</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160; </div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ad5c33354afdac626be013d76bd638c82">ailiaTFLiteGetNodeInputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *tensor_index, <span class="keyword">const</span> int32_t node_index, <span class="keyword">const</span> int32_t input_index);</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160; </div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aaa57848491dd1ad11b549c981902d981">ailiaTFLiteGetNodeOutputCount</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *count, <span class="keyword">const</span> int32_t node_index);</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160; </div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a540b22c72178236e44e360fa723cb11a">ailiaTFLiteGetNodeOutputTensorIndex</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, int32_t *tensor_index, <span class="keyword">const</span> int32_t node_index, <span class="keyword">const</span> int32_t output_index);</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160; </div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a96ebebd2171386c11198ed01a6f35008">ailiaTFLiteGetNodeOption</a>(<span class="keyword">const</span> <span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">void</span> *value, <span class="keyword">const</span> int32_t node_index, <span class="keyword">const</span> <span class="keywordtype">char</span> *key);</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160; </div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abe78851c83ea8b555bca91db03191c13">ailiaTFLiteGetOperatorName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> **name, <span class="keyword">const</span> int32_t op);</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160; </div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;<span class="comment">    * プロファイルAPI</span></div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160; </div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ae6644208466e6ff60465b50554b88318">ailiaTFLiteSetProfileMode</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">int</span> mode);</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160; </div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a31b6a4c7ab20bc6285d0f030c49a551f">ailiaTFLiteGetSummaryLength</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">size_t</span> *buffer_size);</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160; </div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aa06cfe7964f7e91fcac4dac14c6d5ede">ailiaTFLiteGetSummary</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> buffer_size);</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160; </div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;<span class="comment">    * エラー詳細取得API</span></div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160; </div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    <a class="code" href="ailia__tflite_8h.html#a618d3addc7d3b9c224757fe77b435343">ailiaTFLiteGetErrorDetail</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">char</span> **buffer);</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160; </div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;<span class="comment">    * スクラッチバッファ設定API</span></div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160; </div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;    <a class="code" href="ailia__tflite_8h.html#af14ef38d13485d1c6dcd6046c54d880e">ailiaTFLiteSetScratchBuffer</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">void</span> *int_buffer, <span class="keywordtype">size_t</span> int_buffer_size, <span class="keywordtype">void</span> *mid_buffer, <span class="keywordtype">size_t</span> mid_buffer_size, <span class="keywordtype">void</span> *ext_buffer, <span class="keywordtype">size_t</span> ext_buffer_size);</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160; </div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    <a class="code" href="ailia__tflite_8h.html#abbab042e7225cd6ae27510d2a701dc27">ailiaTFLiteGetScratchBufferUsage</a>(<span class="keyword">struct</span> AILIATFLiteInstance *instance, <span class="keywordtype">size_t</span> *int_buffer_size, <span class="keywordtype">size_t</span> *mid_buffer_size, <span class="keywordtype">size_t</span> *ext_buffer_size);</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160; </div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;<span class="comment">    /****************************************************************</span></div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;<span class="comment">    * MKL設定API</span></div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160; </div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;    <a class="code" href="ailia__tflite_8h.html#ad2ca4f49099ba34816b1e2c62b9dc62d">ailiaTFLiteMklSetNumThreads</a>(<span class="keyword">const</span> int32_t num_threads);</div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160; </div>
+<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;    <a class="code" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a></div>
+<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;    <a class="code" href="ailia__tflite_8h.html#aa4a72d893963d90eebc881868d519a56">ailiaTFLiteMklDisableFastMM</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160; </div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;}</div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !defined(INCLUDED_AILIA_TFLITE) */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aailia__tflite_8h_html_a63009ac208c3d191b530e0f01258c851"><div class="ttname"><a href="ailia__tflite_8h.html#a63009ac208c3d191b530e0f01258c851">ailiaTFLiteGetTensorQuantizationZeroPoint</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteGetTensorQuantizationZeroPoint(const struct AILIATFLiteInstance *instance, int64_t *zero_point, const int32_t tensor_index)</div><div class="ttdoc">Get the zero point of the quantified parameter of the index number TENSOR.</div></div>
 <div class="ttc" id="aailia__tflite_8h_html_ad5c33354afdac626be013d76bd638c82"><div class="ttname"><a href="ailia__tflite_8h.html#ad5c33354afdac626be013d76bd638c82">ailiaTFLiteGetNodeInputTensorIndex</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteGetNodeInputTensorIndex(const struct AILIATFLiteInstance *instance, int32_t *tensor_index, const int32_t node_index, const int32_t input_index)</div><div class="ttdoc">Node_index Acquires the index of Tensor in the input input of node.</div></div>
@@ -406,7 +408,7 @@ $(function() {
 <div class="ttc" id="aailia__tflite_8h_html_aa06cfe7964f7e91fcac4dac14c6d5ede"><div class="ttname"><a href="ailia__tflite_8h.html#aa06cfe7964f7e91fcac4dac14c6d5ede">ailiaTFLiteGetSummary</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteGetSummary(struct AILIATFLiteInstance *instance, char *buffer, size_t buffer_size)</div><div class="ttdoc">Displays the name and shape of each node.</div></div>
 <div class="ttc" id="aailia__tflite_8h_html_aac89825fde2cae2116e18d2b057b7e7f"><div class="ttname"><a href="ailia__tflite_8h.html#aac89825fde2cae2116e18d2b057b7e7f">ailiaTFLiteGetCpuFeatures</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteGetCpuFeatures(struct AILIATFLiteInstance *instance, int32_t *cpu_features)</div><div class="ttdoc">Get the CPU instruction to use.</div></div>
 <div class="ttc" id="aailia__tflite_8h_html_a100750ed83c009c4e2a798075ebe3d50"><div class="ttname"><a href="ailia__tflite_8h.html#a100750ed83c009c4e2a798075ebe3d50">ailiaTFLiteGetNodeOperator</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteGetNodeOperator(const struct AILIATFLiteInstance *instance, int32_t *op, const int32_t node_index)</div><div class="ttdoc">Get node_index number Operator.</div></div>
-<div class="ttc" id="aailia__tflite_8h_html_af403c38c72b52dcbceb46e62fc8f4561"><div class="ttname"><a href="ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561">AILIATFLiteCpuFeatures</a></div><div class="ttdeci">int32_t AILIATFLiteCpuFeatures</div><div class="ttdef"><b>Definition:</b> ailia_tflite.h:492</div></div>
+<div class="ttc" id="aailia__tflite_8h_html_af403c38c72b52dcbceb46e62fc8f4561"><div class="ttname"><a href="ailia__tflite_8h.html#af403c38c72b52dcbceb46e62fc8f4561">AILIATFLiteCpuFeatures</a></div><div class="ttdeci">int32_t AILIATFLiteCpuFeatures</div><div class="ttdef"><b>Definition:</b> ailia_tflite.h:502</div></div>
 <div class="ttc" id="aailia__tflite_8h_html_a777423cf731269609aef6fe4c620b542"><div class="ttname"><a href="ailia__tflite_8h.html#a777423cf731269609aef6fe4c620b542">ailiaTFLiteGetTensorName</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteGetTensorName(const struct AILIATFLiteInstance *instance, const char **name, const int32_t tensor_index)</div><div class="ttdoc">Get the name of the index number Tensor.</div></div>
 <div class="ttc" id="aailia__tflite_8h_html_af14ef38d13485d1c6dcd6046c54d880e"><div class="ttname"><a href="ailia__tflite_8h.html#af14ef38d13485d1c6dcd6046c54d880e">ailiaTFLiteSetScratchBuffer</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteSetScratchBuffer(struct AILIATFLiteInstance *instance, void *int_buffer, size_t int_buffer_size, void *mid_buffer, size_t mid_buffer_size, void *ext_buffer, size_t ext_buffer_size)</div><div class="ttdoc">Set a scratch buffer.</div></div>
 <div class="ttc" id="aailia__tflite_8h_html_a31b6a4c7ab20bc6285d0f030c49a551f"><div class="ttname"><a href="ailia__tflite_8h.html#a31b6a4c7ab20bc6285d0f030c49a551f">ailiaTFLiteGetSummaryLength</a></div><div class="ttdeci">AILIATFLiteStatus ailiaTFLiteGetSummaryLength(struct AILIATFLiteInstance *instance, size_t *buffer_size)</div><div class="ttdoc">Get the size of the buffer required for network Summary.</div></div>

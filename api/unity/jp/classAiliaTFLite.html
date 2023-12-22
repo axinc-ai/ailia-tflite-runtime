@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ailia_tflite
-   &#160;<span id="projectnumber">1.1.10.0</span>
+   &#160;<span id="projectnumber">1.1.11.0</span>
    </div>
   </td>
  </tr>
@@ -187,9 +187,9 @@ $(function() {
 <tr class="memitem:a03af4146018d8373ea81aedba625e817"><td class="memItemLeft" align="right" valign="top">static Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAiliaTFLite.html#a03af4146018d8373ea81aedba625e817">ailiaTFLiteGetSummaryLength</a> (IntPtr instance, ref UInt64 buffer_size)</td></tr>
 <tr class="memdesc:a03af4146018d8373ea81aedba625e817"><td class="mdescLeft">&#160;</td><td class="mdescRight">ネットワークSummary用に必要なバッファのサイズを取得します。  <a href="classAiliaTFLite.html#a03af4146018d8373ea81aedba625e817">[詳解]</a><br /></td></tr>
 <tr class="separator:a03af4146018d8373ea81aedba625e817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7014603b3f8fbb05da77f628baf7c8af"><td class="memItemLeft" align="right" valign="top">static Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAiliaTFLite.html#a7014603b3f8fbb05da77f628baf7c8af">ailiaTFLiteGetSummary</a> (IntPtr instance, IntPtr buffer, UInt64 buffer_size)</td></tr>
-<tr class="memdesc:a7014603b3f8fbb05da77f628baf7c8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">各Nodeの名前と形状を表示します。  <a href="classAiliaTFLite.html#a7014603b3f8fbb05da77f628baf7c8af">[詳解]</a><br /></td></tr>
-<tr class="separator:a7014603b3f8fbb05da77f628baf7c8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34610cb0c9af71e5b02b7023998a8458"><td class="memItemLeft" align="right" valign="top">static Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAiliaTFLite.html#a34610cb0c9af71e5b02b7023998a8458">ailiaTFLiteGetSummary</a> (IntPtr instance, byte[] buffer, UInt64 buffer_size)</td></tr>
+<tr class="memdesc:a34610cb0c9af71e5b02b7023998a8458"><td class="mdescLeft">&#160;</td><td class="mdescRight">各Nodeの名前と形状を表示します。  <a href="classAiliaTFLite.html#a34610cb0c9af71e5b02b7023998a8458">[詳解]</a><br /></td></tr>
+<tr class="separator:a34610cb0c9af71e5b02b7023998a8458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a011a32e0010bebfea98687f74e14036b"><td class="memItemLeft" align="right" valign="top">static Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAiliaTFLite.html#a011a32e0010bebfea98687f74e14036b">ailiaTFLiteGetErrorDetail</a> (IntPtr instance, ref IntPtr buffer)</td></tr>
 <tr class="memdesc:a011a32e0010bebfea98687f74e14036b"><td class="mdescLeft">&#160;</td><td class="mdescRight">エラーの詳細を返します  <a href="classAiliaTFLite.html#a011a32e0010bebfea98687f74e14036b">[詳解]</a><br /></td></tr>
 <tr class="separator:a011a32e0010bebfea98687f74e14036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1339,8 +1339,8 @@ $(function() {
 
 </div>
 </div>
-<a id="a7014603b3f8fbb05da77f628baf7c8af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7014603b3f8fbb05da77f628baf7c8af">&#9670;&nbsp;</a></span>ailiaTFLiteGetSummary()</h2>
+<a id="a34610cb0c9af71e5b02b7023998a8458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34610cb0c9af71e5b02b7023998a8458">&#9670;&nbsp;</a></span>ailiaTFLiteGetSummary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1354,7 +1354,7 @@ $(function() {
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IntPtr&#160;</td>
+          <td class="paramtype">byte[]&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>

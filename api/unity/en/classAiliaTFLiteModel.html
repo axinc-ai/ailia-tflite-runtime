@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ailia_tflite
-   &#160;<span id="projectnumber">1.1.10.0</span>
+   &#160;<span id="projectnumber">1.1.11.0</span>
    </div>
   </td>
  </tr>
@@ -131,6 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ae2a8d344ea6f853610de7b07860c26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAiliaTFLiteModel.html#a4ae2a8d344ea6f853610de7b07860c26">GetOutputTensorData</a> (float[] output_data, int output_index)</td></tr>
 <tr class="memdesc:a4ae2a8d344ea6f853610de7b07860c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data of output tensor.  <a href="classAiliaTFLiteModel.html#a4ae2a8d344ea6f853610de7b07860c26">More...</a><br /></td></tr>
 <tr class="separator:a4ae2a8d344ea6f853610de7b07860c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1149bfa09fc6ba8f45b57db9a023dd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAiliaTFLiteModel.html#ab1149bfa09fc6ba8f45b57db9a023dd0">SetProfileMode</a> (int profile_mode)</td></tr>
+<tr class="memdesc:ab1149bfa09fc6ba8f45b57db9a023dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable profile mode.  <a href="classAiliaTFLiteModel.html#ab1149bfa09fc6ba8f45b57db9a023dd0">More...</a><br /></td></tr>
+<tr class="separator:ab1149bfa09fc6ba8f45b57db9a023dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1149c8481fcaa1da63da541b4784b4a1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAiliaTFLiteModel.html#a1149c8481fcaa1da63da541b4784b4a1">GetSummary</a> ()</td></tr>
+<tr class="memdesc:a1149c8481fcaa1da63da541b4784b4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain network information and profile results.  <a href="classAiliaTFLiteModel.html#a1149c8481fcaa1da63da541b4784b4a1">More...</a><br /></td></tr>
+<tr class="separator:a1149c8481fcaa1da63da541b4784b4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -712,6 +718,46 @@ Protected Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a1149c8481fcaa1da63da541b4784b4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1149c8481fcaa1da63da541b4784b4a1">&#9670;&nbsp;</a></span>GetSummary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string AiliaTFLiteModel.GetSummary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtain network information and profile results. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns an ASCII string displaying the network information and profile results on success, or null on failure. @detail Obtains a string containing network information and profile results. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    {</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classAiliaTFLiteModel.html#a74882918c8530f12fbe8f3ff46bb187d">instance</a> == <span class="keyword">null</span>){</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;        }</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        UInt64 buffer_size = 0;</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        <span class="keywordtype">int</span> status = <a class="code" href="classAiliaTFLite.html">AiliaTFLite</a>.<a class="code" href="classAiliaTFLite.html#a03af4146018d8373ea81aedba625e817">ailiaTFLiteGetSummaryLength</a>(<a class="code" href="classAiliaTFLiteModel.html#a74882918c8530f12fbe8f3ff46bb187d">instance</a>, ref buffer_size);</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <span class="keywordflow">if</span>(!CheckStatus(status, <span class="stringliteral">&quot;ailiaTFLiteGetSummaryLength&quot;</span>)) <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <span class="keywordtype">byte</span>[] buffer = <span class="keyword">new</span> <span class="keywordtype">byte</span>[buffer_size];</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        status = <a class="code" href="classAiliaTFLite.html">AiliaTFLite</a>.<a class="code" href="classAiliaTFLite.html#a34610cb0c9af71e5b02b7023998a8458">ailiaTFLiteGetSummary</a>(<a class="code" href="classAiliaTFLiteModel.html#a74882918c8530f12fbe8f3ff46bb187d">instance</a>, buffer, buffer_size);</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="keywordflow">if</span>(!CheckStatus(status, <span class="stringliteral">&quot;ailiaTFLiteGetSummary&quot;</span>)) <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="keywordflow">return</span> System.Text.Encoding.ASCII.GetString(buffer);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a280e867b852bee86850711f8fe80d36a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a280e867b852bee86850711f8fe80d36a">&#9670;&nbsp;</a></span>OpenFile()</h2>
 
@@ -1049,6 +1095,43 @@ Protected Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="ab1149bfa09fc6ba8f45b57db9a023dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1149bfa09fc6ba8f45b57db9a023dd0">&#9670;&nbsp;</a></span>SetProfileMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AiliaTFLiteModel.SetProfileMode </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>profile_mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable profile mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns true on success, false on failure. @detail Enable profile mode. After enabling profile mode and inference, get profile results in Summary API. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    {</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classAiliaTFLiteModel.html#a74882918c8530f12fbe8f3ff46bb187d">instance</a> == <span class="keyword">null</span>){</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        }</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        <span class="keywordtype">int</span> status = <a class="code" href="classAiliaTFLite.html">AiliaTFLite</a>.<a class="code" href="classAiliaTFLite.html#ad14ebe05838d373d42537ffb8481017f">ailiaTFLiteSetProfileMode</a>(<a class="code" href="classAiliaTFLiteModel.html#a74882918c8530f12fbe8f3ff46bb187d">instance</a>, profile_mode);</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        <span class="keywordflow">if</span>(!CheckStatus(status, <span class="stringliteral">&quot;ailiaTFLiteSetProfileMode&quot;</span>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a74882918c8530f12fbe8f3ff46bb187d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74882918c8530f12fbe8f3ff46bb187d">&#9670;&nbsp;</a></span>instance</h2>
@@ -1116,8 +1199,11 @@ Protected Attributes</h2></td></tr>
 <div class="ttc" id="aclassAiliaTFLite_html_a51c8f9367d76d4a76d8306f52b3a470c"><div class="ttname"><a href="classAiliaTFLite.html#a51c8f9367d76d4a76d8306f52b3a470c">AiliaTFLite.ailiaTFLiteGetNumberOfOutputs</a></div><div class="ttdeci">static Int32 ailiaTFLiteGetNumberOfOutputs(IntPtr instance, ref Int32 num_of_output_tensor)</div><div class="ttdoc">Get the number of TENSOR of the TFLITE model.</div></div>
 <div class="ttc" id="aclassAiliaTFLiteModel_html_a8aec13fcd1112412c5412966725f5c6c"><div class="ttname"><a href="classAiliaTFLiteModel.html#a8aec13fcd1112412c5412966725f5c6c">AiliaTFLiteModel.Dispose</a></div><div class="ttdeci">virtual void Dispose()</div><div class="ttdoc">Release resources.</div><div class="ttdef"><b>Definition:</b> AiliaTFLiteModel.cs:73</div></div>
 <div class="ttc" id="aclassAiliaTFLiteModel_html_a3dfb0758e2b410d9a695abd638674c36"><div class="ttname"><a href="classAiliaTFLiteModel.html#a3dfb0758e2b410d9a695abd638674c36">AiliaTFLiteModel.OpenMem</a></div><div class="ttdeci">bool OpenMem(byte[] tflite_model_buf, Int32 env_id, Int32 memory_mode, UInt32 flags)</div><div class="ttdoc">Creates network objects from memory.</div><div class="ttdef"><b>Definition:</b> AiliaTFLiteModel.cs:120</div></div>
+<div class="ttc" id="aclassAiliaTFLite_html_a03af4146018d8373ea81aedba625e817"><div class="ttname"><a href="classAiliaTFLite.html#a03af4146018d8373ea81aedba625e817">AiliaTFLite.ailiaTFLiteGetSummaryLength</a></div><div class="ttdeci">static Int32 ailiaTFLiteGetSummaryLength(IntPtr instance, ref UInt64 buffer_size)</div><div class="ttdoc">Get the size of the buffer required for network Summary.</div></div>
+<div class="ttc" id="aclassAiliaTFLite_html_a34610cb0c9af71e5b02b7023998a8458"><div class="ttname"><a href="classAiliaTFLite.html#a34610cb0c9af71e5b02b7023998a8458">AiliaTFLite.ailiaTFLiteGetSummary</a></div><div class="ttdeci">static Int32 ailiaTFLiteGetSummary(IntPtr instance, byte[] buffer, UInt64 buffer_size)</div><div class="ttdoc">Displays the name and shape of each node.</div></div>
 <div class="ttc" id="aclassAiliaTFLite_html_a7c318dd9f681ba80793fc048699a645c"><div class="ttname"><a href="classAiliaTFLite.html#a7c318dd9f681ba80793fc048699a645c">AiliaTFLite.ailiaTFLiteGetTensorDimension</a></div><div class="ttdeci">static Int32 ailiaTFLiteGetTensorDimension(IntPtr instance, ref Int32 tensor_dim, Int32 tensor_index)</div><div class="ttdoc">Get the dimension of index number Tensor.</div></div>
 <div class="ttc" id="aclassAiliaTFLite_html_a5fe52b148e04a2a4838b83beb93e25a4"><div class="ttname"><a href="classAiliaTFLite.html#a5fe52b148e04a2a4838b83beb93e25a4">AiliaTFLite.ailiaTFLiteGetTensorBuffer</a></div><div class="ttdeci">static Int32 ailiaTFLiteGetTensorBuffer(IntPtr instance, ref IntPtr buffer, Int32 tensor_index)</div><div class="ttdoc">Obtain a storage buffer in Tensor's data.</div></div>
+<div class="ttc" id="aclassAiliaTFLite_html_ad14ebe05838d373d42537ffb8481017f"><div class="ttname"><a href="classAiliaTFLite.html#ad14ebe05838d373d42537ffb8481017f">AiliaTFLite.ailiaTFLiteSetProfileMode</a></div><div class="ttdeci">static Int32 ailiaTFLiteSetProfileMode(IntPtr instance, Int32 mode)</div><div class="ttdoc">Set the profile mode.</div></div>
 <div class="ttc" id="aclassAiliaTFLite_html_a461b7e1d936ec3c71e17a1c37f9eb803"><div class="ttname"><a href="classAiliaTFLite.html#a461b7e1d936ec3c71e17a1c37f9eb803">AiliaTFLite.ailiaTFLiteAllocateTensors</a></div><div class="ttdeci">static Int32 ailiaTFLiteAllocateTensors(IntPtr instance)</div><div class="ttdoc">Ensure the internal buffer of ailia TFLite runtime.</div></div>
 <div class="ttc" id="aclassAiliaTFLiteModel_html_a74882918c8530f12fbe8f3ff46bb187d"><div class="ttname"><a href="classAiliaTFLiteModel.html#a74882918c8530f12fbe8f3ff46bb187d">AiliaTFLiteModel.instance</a></div><div class="ttdeci">IntPtr instance</div><div class="ttdef"><b>Definition:</b> AiliaTFLiteModel.cs:23</div></div>
 <div class="ttc" id="aclassAiliaTFLite_html_a9c58871deb6e1e9013c56a154c4ef629"><div class="ttname"><a href="classAiliaTFLite.html#a9c58871deb6e1e9013c56a154c4ef629">AiliaTFLite.ailiaTFLiteGetTensorType</a></div><div class="ttdeci">static Int32 ailiaTFLiteGetTensorType(IntPtr instance, ref sbyte tensor_type, Int32 tensor_index)</div><div class="ttdoc">Get the Data type of TENSOR in Index.</div></div>
