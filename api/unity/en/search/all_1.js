@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['close_90',['Close',['../classAiliaTFLiteModel.html#a7a9b93d205be5f3503e9e87bbd6130fa',1,'AiliaTFLiteModel']]]
+  ['index_2dcsharp_2edox_1',['index-csharp.dox',['../index-csharp_8dox.html',1,'']]]
 ];
