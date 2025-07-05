@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ailia_tflite
-   &#160;<span id="projectnumber">1.2.2.0</span>
+   &#160;<span id="projectnumber">1.2.3.0</span>
    </div>
   </td>
  </tr>
@@ -360,9 +360,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af14ef38d13485d1c6dcd6046c54d880e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailia__tflite_8h.html#af14ef38d13485d1c6dcd6046c54d880e">ailiaTFLiteSetScratchBuffer</a> (struct AILIATFLiteInstance *instance, void *int_buffer, size_t int_buffer_size, void *mid_buffer, size_t mid_buffer_size, void *ext_buffer, size_t ext_buffer_size)</td></tr>
 <tr class="memdesc:af14ef38d13485d1c6dcd6046c54d880e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a scratch buffer.  <a href="ailia__tflite_8h.html#af14ef38d13485d1c6dcd6046c54d880e">More...</a><br /></td></tr>
 <tr class="separator:af14ef38d13485d1c6dcd6046c54d880e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a11b9fa1ce2fd811b9804d41bc59900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailia__tflite_8h.html#a5a11b9fa1ce2fd811b9804d41bc59900">ailiaTFLiteSetScratchBufferEx</a> (struct AILIATFLiteInstance *instance, void *int_buffer, size_t int_buffer_size, void *mid_buffer, size_t mid_buffer_size, void *ext_buffer, size_t ext_buffer_size, void *global_buffer, size_t global_buffer_size)</td></tr>
+<tr class="memdesc:a5a11b9fa1ce2fd811b9804d41bc59900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a scratch buffer.  <a href="ailia__tflite_8h.html#a5a11b9fa1ce2fd811b9804d41bc59900">More...</a><br /></td></tr>
+<tr class="separator:a5a11b9fa1ce2fd811b9804d41bc59900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbab042e7225cd6ae27510d2a701dc27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailia__tflite_8h.html#abbab042e7225cd6ae27510d2a701dc27">ailiaTFLiteGetScratchBufferUsage</a> (struct AILIATFLiteInstance *instance, size_t *int_buffer_size, size_t *mid_buffer_size, size_t *ext_buffer_size)</td></tr>
 <tr class="memdesc:abbab042e7225cd6ae27510d2a701dc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum usage of the scratch buffer.  <a href="ailia__tflite_8h.html#abbab042e7225cd6ae27510d2a701dc27">More...</a><br /></td></tr>
 <tr class="separator:abbab042e7225cd6ae27510d2a701dc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a274001c5c986417efa6086d186f62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailia__tflite_8h.html#ae1a274001c5c986417efa6086d186f62">ailiaTFLiteGetScratchBufferUsageEx</a> (struct AILIATFLiteInstance *instance, size_t *int_buffer_size, size_t *mid_buffer_size, size_t *ext_buffer_size, size_t *global_buffer_size)</td></tr>
+<tr class="memdesc:ae1a274001c5c986417efa6086d186f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum usage of the scratch buffer.  <a href="ailia__tflite_8h.html#ae1a274001c5c986417efa6086d186f62">More...</a><br /></td></tr>
+<tr class="separator:ae1a274001c5c986417efa6086d186f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2ca4f49099ba34816b1e2c62b9dc62d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ailia__tflite_8h.html#ad2ca4f49099ba34816b1e2c62b9dc62d">ailiaTFLiteMklSetNumThreads</a> (const int32_t num_threads)</td></tr>
 <tr class="memdesc:ad2ca4f49099ba34816b1e2c62b9dc62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of threads used by MKL.  <a href="ailia__tflite_8h.html#ad2ca4f49099ba34816b1e2c62b9dc62d">More...</a><br /></td></tr>
 <tr class="separator:ad2ca4f49099ba34816b1e2c62b9dc62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2070,6 +2076,65 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae1a274001c5c986417efa6086d186f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a274001c5c986417efa6086d186f62">&#9670;&nbsp;</a></span>ailiaTFLiteGetScratchBufferUsageEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a> ailiaTFLiteGetScratchBufferUsageEx </td>
+          <td>(</td>
+          <td class="paramtype">struct AILIATFLiteInstance *&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>int_buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>mid_buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>ext_buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>global_buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum usage of the scratch buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>ailia TFLite runtime instance pointer </td></tr>
+    <tr><td class="paramname">int_buffer_size</td><td>Size of scratch buffer (L2) </td></tr>
+    <tr><td class="paramname">mid_buffer_size</td><td>Size of scratch buffer (MSMC) </td></tr>
+    <tr><td class="paramname">ext_buffer_size</td><td>Size of scratch buffer (DDR) </td></tr>
+    <tr><td class="paramname">global_buffer_size</td><td>Size of scratch buffer (Global MSMC)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>You can get the size of the necessary scratch buffer by inferring in the first large scratch buffer size. Since the value considering the alignment performed inside is returned, the acquired value can be used directly without considering the alignment. </p>
+
+</div>
+</div>
 <a id="aa06cfe7964f7e91fcac4dac14c6d5ede"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa06cfe7964f7e91fcac4dac14c6d5ede">&#9670;&nbsp;</a></span>ailiaTFLiteGetSummary()</h2>
 
@@ -2906,6 +2971,93 @@ Functions</h2></td></tr>
     <tr><td class="paramname">mid_buffer_size</td><td>Size of scratch buffer (MSMC) </td></tr>
     <tr><td class="paramname">ext_buffer</td><td>Pointer to scratch buffer (DDR) </td></tr>
     <tr><td class="paramname">ext_buffer_size</td><td>Size of scratch buffer (DDR)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Set the scratch buffer used for mmalib.It is valid only when env_mmalib is specified. The alignment of the buffer is performed internally, so there is no need to consider alignment. If you specify 0 for a buffer size other than L2, you can disable the specified buffer. If you specify * env_mmalib, execute ailiaTFLiteAllocateTensors without calling this function, return AILIA_TFLITE_STATUS_INVALID_STATE. The scratch buffer can be changed each time ailiaTFLitePredict is called. However, the size of the scratch buffer must be the same as the value used in ailiaTFLiteAllocateTensors. Because it is used as a work area of non -permanent data, it is possible to give the same buffer to multiple instances for single threads. </p>
+
+</div>
+</div>
+<a id="a5a11b9fa1ce2fd811b9804d41bc59900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a11b9fa1ce2fd811b9804d41bc59900">&#9670;&nbsp;</a></span>ailiaTFLiteSetScratchBufferEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ailia__tflite_8h.html#afda2f6d89489d73ae1b983b2a8903cf2">AILIATFLiteStatus</a> ailiaTFLiteSetScratchBufferEx </td>
+          <td>(</td>
+          <td class="paramtype">struct AILIATFLiteInstance *&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>int_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>int_buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mid_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>mid_buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ext_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ext_buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>global_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>global_buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a scratch buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">instance</td><td>ailia TFLite runtime instance pointer </td></tr>
+    <tr><td class="paramname">int_buffer</td><td>Pointer to scratch buffer (L2) </td></tr>
+    <tr><td class="paramname">int_buffer_size</td><td>Size of scratch buffer (L2) (64 byte or above) </td></tr>
+    <tr><td class="paramname">mid_buffer</td><td>Pointer to scratch buffer (MSMC) </td></tr>
+    <tr><td class="paramname">mid_buffer_size</td><td>Size of scratch buffer (MSMC) </td></tr>
+    <tr><td class="paramname">ext_buffer</td><td>Pointer to scratch buffer (DDR) </td></tr>
+    <tr><td class="paramname">ext_buffer_size</td><td>Size of scratch buffer (DDR) </td></tr>
+    <tr><td class="paramname">global_buffer</td><td>Pointer to scratch buffer (Global MSMC) </td></tr>
+    <tr><td class="paramname">global_buffer_size</td><td>Size of scratch buffer (Global MSMC)</td></tr>
   </table>
   </dd>
 </dl>
