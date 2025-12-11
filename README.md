@@ -29,5 +29,5 @@ This api document is in beta. We plan to change the URL of the document in the f
 
 ## Contact
 
-- [ax Inc.](https://axinc.jp/en/)
+- [ailia Inc.](https://ailia.ai/en/)
 
